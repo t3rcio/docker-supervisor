@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+   supervisor:
+      build: .
+      restart: always
+      command: /usr/bin/supervisord
+      volumes:
+         - .:/code
+      
